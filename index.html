@@ -1,69 +1,134 @@
 
 
-<!Doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
- <style>
-body {
-  font-family: "Roboto", sans-serif;
-  background-color:Teal;
-  color:white;
-}
-   h1 {
-     text-align:center;
-     font-weight:bold;
-     color:#ffffff;
-   }
-   aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  font-style: italic;
-  background-color: lightgray;
-}
-</style>
-    </head>
-  <body>
-    <header>
-      <h1>Welcome to our website</h1>
-      </header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#home">About</a>
-      <a href="#home">News</a>
-      <a href="#home">Contact</a>
-      </nav>
-    <section>
-      <article>
-<h2>Google Chrome</h2>
-<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
-</article>
+<head>
+<meta charset="utf-8">
+<title>The Gym Personal Training</title>
+</head>
+<link href="style.css" rel="stylesheet"  />
+<style type="text/css">
 
-<article>
-<h2>Mozilla Firefox</h2>
-<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-</article>
 
+ </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+
+<script>
+$(window).load(function()){
+$('.blueberry').blueberry();
+)};
+</script>
+<header>
+<a href="#" id="logo"></a>
+<nav>
+<a href="#" id="menu-icon"></a>
+<ul>
+
+<li><a href="#" class="current">Home</a></li>
+<li><a href="#">Trainers</a></li>
+<li><a href="#">Plans</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Facilities</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+</nav>
+</header>
+<body>
+<div id="doc">
+<div id="content">
+<div class="blueberry" style="max-width:930px">
+  <img class="mySlides w3-animate-fading" src="images/gym1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/gym2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/gym3.jpg" style="width:100%">
+  </div>
+</div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+<section>
+<img src="images/personal2.jpg"/>
+<h1>Best Trainers Around </h1>
+<p>All Simply Gym clubs offer personal trainers to help around the gym or for personal training sessions.All Simply Gym clubs offer personal trainers to help around the gym or for personal training sessions</p>
+</section>
+<section>
+<img src="images/local.png"/>
+<h1>Local and Convience </h1>
+<p>All Simply Gym clubs offer personal trainers to help around the gym or for personal training sessions.All Simply Gym clubs offer personal trainers to help around the gym or for personal training sessions</p>
+</section>
+<section>
+<img src="images/check.gif"/>
+<h1>Check Us out-Free </h1>
+<p>Exact spa facilities vary by club but will be a combination of sauna, steam room, aromatherapy and sunbeds</p>
+</section>
+<div class="clear"></div>
 <article>
-<h2>Microsoft Edge</h2>
-<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-</article>
-      </section>
-    <section>
- <article>
- <h2>Microsoft Edge</h2>
-<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+<img src="images/class2.jpg"/>
 </article>
 <aside>
-<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+<h2>Our Group Class Schedule</h2>
+<ul class="gym">
+<li><h3>Sudio Cycling 8.00am to 60min</h3></li>
+<li><h3>AP Sculputing 12.00 to 30 min</h3></li>
+<li><h3>Power Youga 10.am to 60min</h3></li>
+<li><h3>Boot Camp 12.00 to 30min</h3></li>
+<li><h3>Butt sculpiting 1.00 to 30min</h3></li>
+</ul>
 </aside>
-      </section>
-    <footer>
-      <p>Author: Hege Refsnes</p>
-      <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-      </footer>
-    </body>
-  </html>
+<div class="clear"></div>
+<section>
+<h1>Ladies Section </h1>
+<img src="images/ladies.jpg"/>
+<p>Exact spa facilities vary by club but will be a combination of sauna, steam room, aromatherapy and sunbeds</p>
+</section>
+<section>
+
+<h1>Gym Floor</h1>
+<img src="images/floor.jpg"/>
+<p>Exact spa facilities vary by club but will be a combination of sauna, steam room, aromatherapy and sunbeds</p>
+</section>
+<section>
+<h1>Free Weight </h1>
+<img src="images/weight.jpeg"/>
+<p>Exact spa facilities vary by club but will be a combination of sauna, steam room, aromatherapy and sunbeds</p>
+</section>
+<footer>
+<section>
+<h3><b>The Gym</b></h3>
+<p><b>021-2336-4343</b></br></br>
+32 vauxhall Road Birmingham,B7 4EZ<br>
+training@gym.com<br>
+</p>
+</section>
+<section>
+<h3>Connect With Us</h3>
+<ul class="social">
+<li><a href="#"><img src="images/fb.png"/></a></li>
+<li><a href="#"><img src="images/youtube.png"/></a></li>
+<li><a href="#"><img src="images/twitter.svg"/></a></li>
+</ul>
+</section>
+<section>
+<img src="images/gymlogo.jpg"/>
+</section>
+</footer>
+<footer class="second">
+<p>CopyRight- The Gym 2014</p>
+</footer>
+</body>
+</html>
